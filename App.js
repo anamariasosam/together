@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Header, Title, Body } from 'native-base';
 
-import Home from './src/scenes/Home';
+import Diner from './src/scenes/Diner';
 import FooterMenu from './src/components/FooterMenu';
 
 export default class App extends React.Component {
@@ -10,11 +10,11 @@ export default class App extends React.Component {
       <Container>
         <Header>
           <Body>
-            <Title>Together</Title>
+            <Title>Diner</Title>
           </Body>
         </Header>
 
-        <Home />
+        <Diner />
 
         <FooterMenu />
       </Container>
