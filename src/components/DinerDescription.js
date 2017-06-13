@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
-import { CardItem, Body, Text } from 'native-base';
+import { CardItem, Body, Text, Badge } from 'native-base';
 
-import Stars from './Stars';
-
-const DinerDescription = () =>  {
+const DinerDescription = ({ best_plate_her, best_plate_him }) =>  {
   return (
     <CardItem footer>
       <Body>
-    <Text>
-      Best Plates:
-    </Text>
-    <Text>
-      Best Plates:
-    </Text>
-    <Stars />
-  </Body>
-
-
+        <Text>
+          💁🏻 {best_plate_her}
+        </Text>
+        <Text>
+          💁🏻‍♂️ {best_plate_him}
+        </Text>
+      </Body>
     </CardItem>
   );
 }

@@ -5,22 +5,12 @@ import DinerCard from '.././components/DinerCard';
 
 const cards = [
   {
-    text: 'Card One',
-    name: 'One',
+    name: 'Sushi Market',
+    location: 'Contenedores',
     image: require('.././images/cover.jpg'),
-    description: 'comida de mar'
-  },
-  {
-    text: 'Card Two',
-    name: 'Two',
-    image: require('.././images/cover.jpg'),
-    description: 'comida de mar'
-  },
-  {
-    text: 'Card Three',
-    name: 'Three',
-    image: require('.././images/cover.jpg'),
-    description: 'comida de mar'
+    best_plate_her: 'Sopa del Mar',
+    best_plate_him: 'Fujishowa',
+    review: 3.5
   },
 ];
 
@@ -29,11 +19,14 @@ export default class DinerCarousel extends Component {
     return (
       <DeckSwiper
         dataSource={cards}
-        renderItem={item =>
+        renderItem={card =>
           <DinerCard
-          name={item.name}
-          description={item.description}
-          image={item.image}
+            name={card.name}
+            location={card.location}
+            best_plate_her={card.best_plate_her}
+            best_plate_him={card.best_plate_him}
+            image={card.image}
+            review={card.review}
           />
         }
       />
