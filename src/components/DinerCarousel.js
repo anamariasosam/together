@@ -1,35 +1,61 @@
 import React, { Component } from 'react';
-import { DeckSwiper } from 'native-base';
+import { ScrollView } from 'react-native';
 
 import DinerCard from '.././components/DinerCard';
 
-const cards = [
-  {
-    name: 'Sushi Market',
-    location: 'Contenedores',
-    image: require('.././images/cover.jpg'),
-    best_plate_her: 'Sopa del Mar',
-    best_plate_him: 'Fujishowa',
-    review: 3.5
-  },
-];
-
 export default class DinerCarousel extends Component {
+  constructor() {
+    super();
+    this.state = {
+      diners: [],
+    };
+  }
+
+  componentWillMount() {
+    this.setState({ diners: [
+      {
+        name: 'Sushi Market',
+        location: 'Contenedores, Envigado',
+        image: require('.././images/sushi.jpg'),
+        logo: require('.././images/sushimarket.jpg'),
+        best_plate_her: 'Sopa del Mar',
+        best_plate_him: 'Fujishowa',
+        review: 4.5
+      },
+      {
+        name: 'Grill Station',
+        location: 'Provenza, Poblado',
+        image: require('.././images/grill_station.jpg'),
+        logo: require('.././images/grillstation.jpg'),
+        best_plate_her: 'New York',
+        best_plate_him: 'New York',
+        review: 3.5
+      },
+    ]
+    });
+  }
+
+  renderDiners() {
+   return this.state.diners.map(diner =>
+     <DinerCard
+       name={diner.name}
+       location={diner.location}
+       best_plate_her={diner.best_plate_her}
+       best_plate_him={diner.best_plate_him}
+       image={diner.image}
+       review={diner.review}
+       key={diner.name}
+       logo={diner.logo}
+
+     />
+   );
+ }
+
   render() {
     return (
-      <DeckSwiper
-        dataSource={cards}
-        renderItem={card =>
-          <DinerCard
-            name={card.name}
-            location={card.location}
-            best_plate_her={card.best_plate_her}
-            best_plate_him={card.best_plate_him}
-            image={card.image}
-            review={card.review}
-          />
-        }
-      />
+      <ScrollView>
+        { this.renderDiners() }
+      </ScrollView>
     );
   }
 }

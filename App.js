@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Title, Body } from 'native-base';
+import { Container, Header, Title, Body,Subtitle } from 'native-base';
 
 import Diner from './src/scenes/Diner';
 import FooterMenu from './src/components/FooterMenu';
@@ -11,6 +11,7 @@ export default class App extends React.Component {
         <Header>
           <Body>
             <Title>Diner</Title>
+            <Subtitle>Best Restaurants</Subtitle>
           </Body>
         </Header>
 
