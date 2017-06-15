@@ -1,5 +1,5 @@
 import React from 'react';
-import { Thumbnail , ListItem, List, Body, Text} from 'native-base';
+import { List } from 'native-base';
 
 import FavsListItem from './FavsListItem';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Thumbnail , ListItem, Body, Text} from 'native-base';
+import { Thumbnail, ListItem, Body, Text} from 'native-base';
 
 const FavsListItem = ({ topic, description }) =>  {
   const thumbnails = {

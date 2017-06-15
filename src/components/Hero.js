@@ -7,9 +7,9 @@ import HeroDescription from './HeroDescription';
 const Hero = () =>  {
   return (
     <Card>
-       <HeroImage />
-       <HeroDescription months={50}  years={4} />
-     </Card>
+      <HeroImage />
+      <HeroDescription months={50}  years={4} />
+    </Card>
   );
 }
 
