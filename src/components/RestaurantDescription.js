@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { CardItem, Body, Text, Badge } from 'native-base';
+import React from 'react';
+import { CardItem, Body, Text } from 'native-base';
 
 const RestaurantDescription = ({ best_plate_her, best_plate_him }) =>  {
   return (

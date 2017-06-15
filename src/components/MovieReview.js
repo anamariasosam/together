@@ -8,7 +8,6 @@ const MovieReview = ({review}) =>  {
         <Text>{review}</Text>
       </Badge>
     </Right>
-
   );
 }
 

@@ -1,7 +1,8 @@
 import React from 'react';
-import { ListItem, Text, Right, Badge } from 'native-base';
+import { ListItem, Text } from 'native-base';
 
 import MovieReview from '.././components/MovieReview';
+
 const MovieDetail = ({ name, review }) =>  {
   return (
     <ListItem>

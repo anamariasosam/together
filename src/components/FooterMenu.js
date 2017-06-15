@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Icon, Footer, FooterTab, Text} from 'native-base';
+import { Footer, FooterTab } from 'native-base';
 
 import FooterItem from './FooterItem';
 

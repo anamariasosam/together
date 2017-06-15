@@ -1,5 +1,5 @@
 import React from 'react';
-import { Content } from 'native-base';
+import { Content, Container } from 'native-base';
 
 import Hero from '.././components/Hero';
 import FavsList from '.././components/FavsList';

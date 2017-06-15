@@ -15,7 +15,6 @@ const CitiesListItem = ({ name, date }) =>  {
         <Icon name="arrow-forward" />
       </Right>
      </ListItem>
-
   );
 }
 

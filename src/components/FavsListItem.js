@@ -8,13 +8,13 @@ const FavsListItem = ({ topic, description }) =>  {
     'city'  : require('.././images/city.png')
   };
   return (
-    <ListItem>
-      <Thumbnail square source={thumbnails[topic]}/>
-         <Body>
-             <Text>Best {topic}</Text>
-             <Text note>{description}</Text>
-         </Body>
-     </ListItem>
+  <ListItem>
+    <Thumbnail square source={thumbnails[topic]}/>
+    <Body>
+      <Text>Best {topic}</Text>
+      <Text note>{description}</Text>
+    </Body>
+  </ListItem>
   );
 }
 
