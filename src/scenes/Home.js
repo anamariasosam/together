@@ -1,10 +1,13 @@
-import React from 'react';
-import { Content, Container } from 'native-base';
+import React, { Component } from 'react';
+import { Container, Content } from 'native-base';
+
 
 import Hero from '.././components/Hero';
 import FavsList from '.././components/FavsList';
+import FooterMenu from '.././components/FooterMenu';
 
-export default class Home extends React.Component {
+
+export default class Home extends Component {
   render() {
     return (
       <Container>
@@ -12,6 +15,8 @@ export default class Home extends React.Component {
           <Hero />
           <FavsList />
         </Content>
+
+        <FooterMenu />
       </Container>
     );
   }
