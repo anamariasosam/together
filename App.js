@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Header, Title, Body,Subtitle } from 'native-base';
 
-import Diner from './src/scenes/Diner';
+import Home from './src/scenes/Home';
+import Restaurant from './src/scenes/Restaurant';
+import Movie from './src/scenes/Movie';
 import FooterMenu from './src/components/FooterMenu';
 
 export default class App extends React.Component {
@@ -10,12 +12,12 @@ export default class App extends React.Component {
       <Container>
         <Header>
           <Body>
-            <Title>Diner</Title>
-            <Subtitle>Best Restaurants</Subtitle>
+            <Title>Movies</Title>
+            <Subtitle>List of Movies</Subtitle>
           </Body>
         </Header>
 
-        <Diner />
+        <Movie />
 
         <FooterMenu />
       </Container>
