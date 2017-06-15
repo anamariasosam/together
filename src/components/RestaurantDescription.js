@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { CardItem, Body, Text, Badge } from 'native-base';
 
-const DinerDescription = ({ best_plate_her, best_plate_him }) =>  {
+const RestaurantDescription = ({ best_plate_her, best_plate_him }) =>  {
   return (
     <CardItem footer>
       <Body>
@@ -16,4 +16,4 @@ const DinerDescription = ({ best_plate_her, best_plate_him }) =>  {
   );
 }
 
-export default DinerDescription;
+export default RestaurantDescription;

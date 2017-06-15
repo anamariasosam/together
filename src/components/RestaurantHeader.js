@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { CardItem, Text, Body, Thumbnail, Left } from 'native-base';
 
-const DinerHeader = ({ name, location, logo}) =>  {
+const RestaurantHeader = ({ name, location, logo}) =>  {
   return (
   <CardItem header>
       <Left>
@@ -14,4 +14,4 @@ const DinerHeader = ({ name, location, logo}) =>  {
   </CardItem>
   );
 }
-export default DinerHeader;
+export default RestaurantHeader;

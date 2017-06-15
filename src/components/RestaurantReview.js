@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { CardItem, Body, Badge, Text } from 'native-base';
 
-const DinerReview = ({review}) =>  {
+const RestaurantReview = ({review}) =>  {
   return (
     <CardItem footer>
       <Body>
@@ -14,4 +14,4 @@ const DinerReview = ({review}) =>  {
   );
 }
 
-export default DinerReview;
+export default RestaurantReview;

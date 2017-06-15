@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 
-import DinerCard from '.././components/DinerCard';
+import RestaurantCard from '.././components/RestaurantCard';
 
-export default class DinerCarousel extends Component {
+export default class RestaurantsList extends Component {
   constructor() {
     super();
     this.state = {
-      diners: [],
+      restaurants: [],
     };
   }
 
   componentWillMount() {
-    this.setState({ diners: [
+    this.setState({ restaurants: [
       {
         name: 'Sushi Market',
         location: 'Contenedores, Envigado',
@@ -35,18 +35,11 @@ export default class DinerCarousel extends Component {
     });
   }
 
-  renderDiners() {
-   return this.state.diners.map(diner =>
-     <DinerCard
-       name={diner.name}
-       location={diner.location}
-       best_plate_her={diner.best_plate_her}
-       best_plate_him={diner.best_plate_him}
-       image={diner.image}
-       review={diner.review}
-       key={diner.name}
-       logo={diner.logo}
-
+  renderRestaurants() {
+   return this.state.restaurants.map(restaurant =>
+     <RestaurantCard
+       {...restaurant}
+       key={restaurant.name}
      />
    );
  }
@@ -54,7 +47,7 @@ export default class DinerCarousel extends Component {
   render() {
     return (
       <ScrollView>
-        { this.renderDiners() }
+        { this.renderRestaurants() }
       </ScrollView>
     );
   }

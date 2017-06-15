@@ -7,7 +7,7 @@ const FooterMenu = () =>  {
   return (
     <Footer >
       <FooterTab>
-        <FooterItem icon="restaurant" topic="Diner" />
+        <FooterItem icon="restaurant" topic="Restaurant" />
         <FooterItem icon="film" topic="Movies" />
         <FooterItem icon="map" topic="Cities" />
       </FooterTab>
