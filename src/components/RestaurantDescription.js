@@ -1,15 +1,15 @@
 import React from 'react';
 import { CardItem, Body, Text } from 'native-base';
 
-const RestaurantDescription = ({ best_plate_her, best_plate_him }) =>  {
+const RestaurantDescription = ({ bestPlateHer, bestPlateHim }) => {
   return (
     <CardItem footer>
       <Body>
         <Text>
-          💁🏻 {best_plate_her}
+          💁🏻 {bestPlateHer}
         </Text>
         <Text>
-          💁🏻‍♂️ {best_plate_him}
+          💁🏻‍♂️ {bestPlateHim}
         </Text>
       </Body>
     </CardItem>

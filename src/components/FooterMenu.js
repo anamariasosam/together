@@ -3,7 +3,7 @@ import { Footer, FooterTab } from 'native-base';
 
 import FooterItem from './FooterItem';
 
-const FooterMenu = () =>  {
+const FooterMenu = () => {
   return (
     <Footer >
       <FooterTab>
@@ -13,6 +13,6 @@ const FooterMenu = () =>  {
       </FooterTab>
     </Footer>
   );
-}
+};
 
 export default FooterMenu;

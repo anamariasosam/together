@@ -1,7 +1,7 @@
 import React from 'react';
 import { Right, Badge, Text } from 'native-base';
 
-const MovieReview = ({review}) =>  {
+const MovieReview = ({ review }) => {
   return (
     <Right>
       <Badge primary>
@@ -9,6 +9,6 @@ const MovieReview = ({review}) =>  {
       </Badge>
     </Right>
   );
-}
+};
 
 export default MovieReview;

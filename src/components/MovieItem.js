@@ -4,14 +4,14 @@ import { List } from 'native-base';
 import MovieGenre from '.././components/MovieGenre';
 import MovieDetail from '.././components/MovieDetail';
 
-const MovieItem = ({ genre, list }) =>  {
-  const moviesList = list.map( (movie) => {
-    return(
+const MovieItem = ({ genre, list }) => {
+  const moviesList = list.map((movie) => {
+    return (
       <MovieDetail
-        { ...movie }
-        key={ movie.name }
+        {...movie}
+        key={movie.name}
       />
-    )
+    );
   });
 
   return (
@@ -20,6 +20,6 @@ const MovieItem = ({ genre, list }) =>  {
       { moviesList }
     </List>
   );
-}
+};
 
 export default MovieItem;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Content, ListItem, Badge, Text,Right } from 'native-base';
+import { Content } from 'native-base';
 
 import MovieItem from '.././components/MovieItem';
 
@@ -14,23 +14,24 @@ export default class MoviesList extends Component {
   componentWillMount() {
     this.setState({ movies: [
       {
-        genre: "ACTION",
+        genre: 'ACTION',
         list: [
           {
             name: 'Wonder Woman',
-            review: 8.2
+            review: 8.2,
           },
           {
             name: 'Pirates of the Caribbean',
-            review: 7.1
+            review: 7.1,
           },
           {
             name: 'Logan',
-            review: 8.3
-          }
-        ]
+            review: 8.3,
+          },
+        ],
       },
-    ]});
+    ],
+    });
   }
 
   renderMovies() {

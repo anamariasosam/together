@@ -18,8 +18,8 @@ export default class RestaurantsList extends Component {
         location: 'Contenedores, Envigado',
         image: require('.././images/sushi.jpg'),
         logo: require('.././images/sushimarket.jpg'),
-        best_plate_her: 'Sopa del Mar',
-        best_plate_him: 'Fujishowa',
+        bestPlateHer: 'Sopa del Mar',
+        bestPlateHim: 'Fujishowa',
         review: 4.5
       },
       {
@@ -27,8 +27,8 @@ export default class RestaurantsList extends Component {
         location: 'Provenza, Poblado',
         image: require('.././images/grill_station.jpg'),
         logo: require('.././images/grillstation.jpg'),
-        best_plate_her: 'New York',
-        best_plate_him: 'New York',
+        bestPlateHer: 'New York',
+        bestPlateHim: 'New York',
         review: 3.5
       },
     ]
