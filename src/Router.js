@@ -24,12 +24,12 @@ const styles = {
 
 const RouterComponent = () => (
   <Router
-    sceneStyle={{ paddingTop: 65 }}
+    sceneStyle={{ paddingTop: 70 }}
     navigationBarStyle={styles.viewStyle}
     titleStyle={styles.textStyle}
   >
     <Scene key="root">
-      <Scene key="home" component={Home} title="Together" initial />
+      <Scene key="Home" component={Home} title="Together" initial renderBackButton={() => (null)} />
       <Scene key="Cities" component={City} title="Cities" />
       <Scene key="Restaurants" component={Restaurant} title="Restaurants" />
       <Scene key="Movies" component={Movie} title="Movies" />

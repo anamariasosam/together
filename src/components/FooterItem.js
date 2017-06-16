@@ -14,12 +14,14 @@ const FooterMenu = ({ icon, topic }) => {
       case 'Cities':
         Actions.Cities();
         break;
+      default:
+        Actions.Home();
+        break;
     }
   };
   return (
     <Button onPress={changeScene}>
       <Icon name={icon} />
-      <Text>{topic}</Text>
     </Button>
   );
 };
