@@ -1,23 +1,16 @@
-import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
-
+import React from 'react';
 
 import Hero from '.././components/Hero';
 import FavsList from '.././components/FavsList';
-import FooterMenu from '.././components/FooterMenu';
+import Scene from './Scene';
 
+const Home = () => {
+  return (
+    <Scene>
+      <Hero />
+      <FavsList />
+    </Scene>
+  );
+};
 
-export default class Home extends Component {
-  render() {
-    return (
-      <Container>
-        <Content>
-          <Hero />
-          <FavsList />
-        </Content>
-
-        <FooterMenu />
-      </Container>
-    );
-  }
-}
+export default Home;

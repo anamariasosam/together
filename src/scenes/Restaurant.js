@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
+import React from 'react';
 
 import RestaurantsList from '.././components/RestaurantsList';
+import Scene from './Scene';
 
-export default class Restaurant extends Component {
-  render() {
-    return (
-      <Container>
-        <Content>
-          <RestaurantsList />
-        </Content>
-      </Container>
-    );
-  }
-}
+const Restaurant = () => {
+  return (
+    <Scene>
+      <RestaurantsList />
+    </Scene>
+  );
+};
+
+export default Restaurant;

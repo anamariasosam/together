@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
+import React from 'react';
 
 import MoviesList from '.././components/MoviesList';
+import Scene from './Scene';
 
-export default class Movie extends Component {
-  render() {
-    return (
-      <Container>
-        <Content>
-          <MoviesList />
-        </Content>
-      </Container>
-    );
-  }
-}
+const Movie = () => {
+  return (
+    <Scene>
+      <MoviesList />
+    </Scene>
+  );
+};
+
+export default Movie;

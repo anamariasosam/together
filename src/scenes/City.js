@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
+import React from 'react';
 
 import CitiesList from '.././components/CitiesList';
-import FooterMenu from '.././components/FooterMenu';
+import Scene from './Scene';
 
-export default class City extends Component {
-  render() {
-    return (
-      <Container>
-        <Content>
-          <CitiesList />
-        </Content>
+const City = () => {
+  return (
+    <Scene>
+      <CitiesList />
+    </Scene>
+  );
+};
 
-        <FooterMenu />
-      </Container>
-    );
-  }
-}
+export default City;
