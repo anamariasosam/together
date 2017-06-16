@@ -6,14 +6,34 @@ import City from './scenes/City';
 import Movie from './scenes/Movie';
 import Restaurant from './scenes/Restaurant';
 
+const styles = {
+  textStyle: {
+    fontSize: 20,
+    color: '#262626'
+  },
+
+  viewStyle: {
+    borderBottomWidth: 0,
+    height: 65,
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    elevation: 2,
+  }
+};
+
 const RouterComponent = () => (
   <Router
     sceneStyle={{ paddingTop: 65 }}
+    navigationBarStyle={styles.viewStyle}
+    titleStyle={styles.textStyle}
   >
-    <Scene key="list" component={Home} title="Together" initial />
-    <Scene key="list" component={City} title="Together" />
-    <Scene key="list" component={Restaurant} title="Together" />
-    <Scene key="list" component={Movie} title="Together" />
+    <Scene key="root">
+      <Scene key="home" component={Home} title="Together" initial />
+      <Scene key="Cities" component={City} title="Cities" />
+      <Scene key="Restaurants" component={Restaurant} title="Restaurants" />
+      <Scene key="Movies" component={Movie} title="Movies" />
+    </Scene>
   </Router>
 );
 
